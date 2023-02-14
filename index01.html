@@ -4,40 +4,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS com Bootstrap-->
+    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css>
     <title>AmigosPet</title>
 </head>
 <body>
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <header class="d-flex flex-wrap justify-content-center py-1 mb-1 border-bottom">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            <span class="fs-4 fw-bold">AmigosPet</span>
+            <svg class="bi me-3" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4 fw-bold" ><img src="img/pata.png">AmigosPet</span>
           </a>
         </header>   
     </div>    
     
-    <nav>
-      <div class="container">
-      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+    <div class="container">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+          <button class="nav-link" id="nav-servico-tab" data-bs-toggle="tab" data-bs-target="#nav-servico" type="button" role="tab" aria-controls="nav-servico" aria-selected="false">Serviços</button>
+          <button class="nav-link" id="nav-faq-tab" data-bs-toggle="tab" data-bs-target="#nav-faq" type="button" role="tab" aria-controls="nav-faq" aria-selected="false">FAQ</button>
+          <button class="nav-link" id="nav-contato-tab" data-bs-toggle="tab" data-bs-target="#nav-contato" type="button" role="tab" aria-controls="nav-contato" aria-selected="false">Contato</button>
+          
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+          <div class="row text-center text-md-start">
+            <div class="col-md-6 mt-1">
+                <h2 class="mt-3 fs-5">Aqui o seu amigo é tratado com carinho</h2>
+                <h1 class="display-2 fw-bold">Clínica Veterinária</h1>
+                <p class="mt-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iste aut
+                    accusantium voluptate nobis
+                    maxime omnis quidem fuga harum fugit placeat sed rerum voluptatem sunt, nesciunt eum? Amet,
+                    ipsam alias?</p>
+                <a target="_blank"
+                    href="https://api.whatsapp.com/send?phone=551e+23&text=Ol%C3%A1%20gostaria%20de%20agendar%20uma%20consulta%20veterinaria%20para%20o%20meu%20doguinho!"
+                    class="mt-2 w-50 p-2 fw-bold btn btn-primary">Agendar Consulta <i
+                        class="mdi mdi-arrow-right-thick"></i>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player class="m-0 m-auto float-none float-md-end"
+                    src="https://assets1.lottiefiles.com/packages/lf20_erya171l.json" background="transparent"
+                    speed="1" style="max-width: 70%;" loop autoplay>
+                </lottie-player>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-servico" role="tabpanel" aria-labelledby="nav-servico-tab" tabindex="0">
+          <!--<div class="row pt-5 mt-5">
+            <div class="col-12">
+                <h2 class="display-5 fw-bold">Serviços Prestados</h2>
+            </div>
+        </div>-->
+          <div class="row mt-1">
+            <div class="col-lg-4 mt-5">
+                <img class="rounded-circle border shadow p-5" src="img/vacinado.png">
+
+                <h2 class="mt-3">Vacinação</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is
+                    the first column. Some representative placeholder content for the three columns of text below the carousel. This is
+                    the first column.</p>
+                
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 mt-5">
+                <img class="rounded-circle border shadow p-5" src="img/veterinario.png">
+
+                <h2 class="mt-3">Emergências</h2>
+                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
+                    second column. Another exciting bit of representative placeholder content. This time, we've moved on to the
+                    second column.</p>
+                
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 mt-5">
+                <img class="rounded-circle border shadow p-5" src="img/belezapet.png">
+
+                <h2 class="mt-3">Cuidados Pet</h2>
+                <p>And lastly this, the third column of representative placeholder content.And lastly this, the third column of representative placeholder content.</p>
+                
+            </div><!-- /.col-lg-4 -->
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-faq" role="tabpanel" aria-labelledby="nav-faq-tab" tabindex="0">
+          <!--<div class="row pt-5 mt-5">
+            <div class="col-12 text-center">
+                <h2 class="display-5 fw-bold">Perguntas Frequentes</h2>
+            </div>
+        </div>-->
+        <div class="row mt-3 mb-5">
+            <div class="col-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="text-primary accordion-button bg-light" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                O que meu pet pode pode comer?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                our default variables. It's also worth noting that just about any HTML can go within
+                                the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="text-primary accordion-button bg-light collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Quais são as vacinas necessárias?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                our default variables. It's also worth noting that just about any HTML can go within
+                                the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="text-primary accordion-button bg-light collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Tem retorno de consulta, se precisar?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                our default variables. It's also worth noting that just about any HTML can go within
+                                the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-contato" role="tabpanel" aria-labelledby="nav-contato-tab" tabindex="0">
+          <!--<div class="row pt-5 mt-5">
+            <div class="col-12 text-center">
+                <h2 class="display-5 fw-bold">Contato</h2>
+            </div>
+          </div>-->
+        <div class="row align-items-md-stretch text-center">
+            <div class="col-md-6">
+                <div class="h-100 p-3 bg-light border rounded-3">
+                    <h2>Fale Conosco</h2>
+                    <p class="p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, minus ratione
+                        illum magnam
+                        ad non dolore esse sunt quibusdam! Iste aut molestiae consequuntur, ea repellat quod
+                        voluptatum ratione dicta voluptates?</p>
+                    <p class="mt-4"><i class="mdi mdi-phone"></i> (00) 00000-0000</p>
+                    <p><i class="mdi mdi-email"></i> email@provedor.com</p>
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=551e+23&text=Ol%C3%A1%20gostaria%20de%20agendar%20uma%20consulta%20veterinaria%20para%20o%20meu%20doguinho!"
+                        class="mt-4 w-75 p-3 btn btn-success" type="button"><i class="mdi mdi-whatsapp"></i>
+                        Chamar
+                        Whatsapp</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="h-100 p-3 bg-light border rounded-3">
+
+                    <p>Rua do exemplo, 123, Centro - Cidade</p>
+
+                    <iframe class="m-0 m-auto"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.954274605614!2d-43.21267588434153!3d-22.95191104525453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fd5984aa13f%3A0x9dc984d7019502de!2sCristo%20Redentor!5e0!3m2!1spt-BR!2sbr!4v1652146466154!5m2!1spt-BR!2sbr"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
       </div>
-    </nav>
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+     
+            
+
+      </div>
+    
     </div>
-    </div>
+      
 
    
 
 
-    <!--JavaScript Bundle with Papper-->
+    <!-- JavaScript  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
